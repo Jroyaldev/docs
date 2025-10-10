@@ -1,0 +1,68 @@
+---
+title: "Tasks workspace"
+description: "Coordinate ministry work on a kanban board with filters, mentions, and comment threads."
+---
+
+## Board layout
+
+The Tasks workspace visualizes ministry work across five status columns: <strong>Backlog</strong>, <strong>Next up</strong>, <strong>In progress</strong>, <strong>Blocked</strong>, and <strong>Completed</strong>. Every card shows priority, due dates, tags, and followers at a glance.
+
+<Info>
+Card colors reflect status and priority so you can scan for urgent, blocked, or overdue items instantly.
+</Info>
+
+## Filter the board
+
+Use the filter panel above the board to focus on the work that matters right now.
+
+- **Search** filters tasks by title or description.
+- **Owner** shows tasks assigned to a specific teammate or those still unassigned.
+- **Priority** limits to low, medium, high, or urgent work.
+- **Tag** filters by ministry area such as "worship" or "facilities".
+
+<Tip>
+Filters sync with URL parameters. Share filtered board links in chat so teammates view the exact same slice.
+</Tip>
+
+## Create a task
+
+<Steps>
+  <Step title="Open the dialog">
+    Click <strong>New task</strong> and provide a descriptive title.
+  </Step>
+  <Step title="Add details">
+    Set an optional description, priority, and due date. ChurchDesk accepts future dates only.
+  </Step>
+  <Step title="Assign later">
+    Tasks can be created unassigned. Use the card controls to set an owner as soon as you know who is responsible.
+  </Step>
+</Steps>
+
+## Work within a card
+
+- Change assignee, status, and due date inline without closing the card.
+- View or clear due dates using the calendar input and reset button.
+- Toggle the comment feed to exchange updates or tag teammates (ChurchDesk supports mentions via the Team workspace handles).
+- Followers count shows who is subscribed to updates.
+
+<Warning>
+Closing a card while a mutation is still pending can lead to temporary UI drift. Wait for the spinner to disappear before navigating away.
+</Warning>
+
+## Empty states and guidance
+
+Each column displays contextual prompts when empty (e.g., "Capture future ministry ideas here" for the backlog). Use them to align your team on how to categorize work.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Filters won't reset" icon="refresh-ccw">
+    Use the <strong>Reset</strong> button in the filter panel. It clears search terms, owner, priority, and tag selections in one click.
+  </Accordion>
+  <Accordion title="Comments fail to send" icon="message-circle">
+    Confirm you still have access to the task board and that your Convex deployment is running. Refresh the page after reconnecting.
+  </Accordion>
+  <Accordion title="Due date shows the wrong day" icon="calendar">
+    ChurchDesk stores dates in UTC at midnight. Time zone conversion happens in the browser, so check your device clock settings.
+  </Accordion>
+</AccordionGroup>

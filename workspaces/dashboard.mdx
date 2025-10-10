@@ -1,0 +1,93 @@
+---
+title: "Dashboard workspace"
+description: "Stay ahead of ministry rhythms with live insights, alerts, and quick actions."
+---
+
+## Why the dashboard matters
+
+The dashboard opens every time you sign in. It pulls the latest Convex data for events, sermons, prayer requests, tasks, and birthdays so pastors can start the day with the same picture of what needs attention.
+
+<CardGroup cols={2}>
+  <Card title="Daily briefing" icon="sparkles">
+    Greets you by name and highlights the focus of the week plus AI-powered shortcuts for sermon outlines and pastoral follow-ups.
+  </Card>
+  <Card title="Live metrics" icon="activity">
+    Insight cards summarize gatherings, sermon velocity, prayer momentum, and task completion with context about what is next.
+  </Card>
+  <Card title="Ministry rhythm" icon="calendar-clock">
+    A chronological list of the next five events with type badges, locations, and start times to plan pastoral coverage.
+  </Card>
+  <Card title="Action widgets" icon="grid">
+    Modular cards showcase upcoming events, sermon progress, active prayers, task pulse, and birthdays—all updating in real time.
+  </Card>
+</CardGroup>
+
+## Read the insight cards
+
+<Columns cols={2}>
+  <div>
+    <h3>Gatherings this week</h3>
+    <p>Shows the number of events scheduled in the next seven days and names the most immediate gathering.</p>
+  </div>
+  <div>
+    <h3>Sermon pipeline</h3>
+    <p>Counts sermons that are still in draft, review, or scheduled states and surfaces the next delivery date.</p>
+  </div>
+  <div>
+    <h3>Active prayer wall</h3>
+    <p>Displays the volume of current requests and nudges the team to lift new stories.</p>
+  </div>
+  <div>
+    <h3>Ministry tasks</h3>
+    <p>Shows an overall completion percentage, how many items remain in motion, and how many are overdue.</p>
+  </div>
+</Columns>
+
+<Tip>
+Hover any card to reveal subtle shadows that confirm real-time updates have landed. No page refresh needed.
+</Tip>
+
+## Work the widget grid
+
+- **Upcoming gatherings**: keeps four upcoming events visible with date chips and location context. Empty states remind you to fill the calendar.
+- **Sermons in motion**: lists every sermon with its status badge and an inline progress bar linked to the sermon studio workspace.
+- **Prayer spotlight**: highlights current requests, their privacy channel, and the total number in play.
+- **Task pulse**: surfaces top tasks, due date labels, and status pills so nothing slips.
+- **Upcoming birthdays**: celebrates congregants with quick cues for pastoral teams.
+
+<Warning>
+Widgets disappear if their underlying dataset is empty in Convex. Add an event, sermon, or task to repopulate the card.
+</Warning>
+
+## Watch the sidebar
+
+The right sidebar keeps everyone aligned:
+
+- **Quick alerts** flag new connect cards, pending prayer updates, and tasks approaching deadlines.
+- **Shepherd AI** offers a launchpad to request stats, craft liturgy, or summarize check-ins without leaving the dashboard.
+
+<Steps>
+  <Step title="Review your day">
+    Start each morning by scanning Quick alerts. Acknowledge each item by assigning a task or creating a follow-up.
+  </Step>
+  <Step title="Prep the weekend">
+    Use the Ministry rhythm card to confirm worship setlists, volunteers, and hospitality assignments for the week.
+  </Step>
+  <Step title="Celebrate wins">
+    Check birthdays and completed tasks during staff huddles to celebrate the people behind the metrics.
+  </Step>
+</Steps>
+
+## Troubleshooting data freshness
+
+<AccordionGroup>
+  <Accordion title="Insight cards stuck on em dash" icon="refresh-ccw">
+    Verify the Convex deployment is running. Insight cards display `—` when no records are returned.
+  </Accordion>
+  <Accordion title="Widgets missing expected items" icon="alert-triangle">
+    Confirm the related workspace (Tasks, Sermons, Prayer) lists the entries you expect. If not, add them there first.
+  </Accordion>
+  <Accordion title="Greeting shows the wrong name" icon="user">
+    Update your profile name and email in the Team workspace so the hero banner can greet you properly.
+  </Accordion>
+</AccordionGroup>

@@ -1,0 +1,66 @@
+---
+title: "Calendar workspace"
+description: "Plan church-wide gatherings and personal follow-ups with a single monthly view."
+---
+
+## Two views in one
+
+The Calendar workspace combines an upcoming schedule list with a monthly snapshot so you can glance at both the details and the big picture. Tabs separate church events from personal pastoral reminders.
+
+<CardGroup cols={2}>
+  <Card title="Upcoming schedule" icon="calendar-clock">
+    A vertical timeline sorted chronologically with visibility badges and descriptions.
+  </Card>
+  <Card title="Monthly snapshot" icon="calendar-days">
+    A grid that highlights each day with church events, personal follow-ups, and overflow indicators.
+  </Card>
+</CardGroup>
+
+<Tip>
+Personal follow-ups are visible only to the author. Use them to block pastoral visits or counseling sessions without exposing details to the entire team.
+</Tip>
+
+## Schedule an event
+
+<Steps>
+  <Step title="Open the event dialog">
+    Click <strong>Schedule event</strong>. ChurchDesk pre-fills start and end times one hour apart.
+  </Step>
+  <Step title="Add event details">
+    Provide the title, optional type, location, and notes. Choose visibility: <strong>Church</strong> for everyone, <strong>Staff</strong> for internal planning, or <strong>Personal</strong> to keep it private.
+  </Step>
+  <Step title="Save and confirm">
+    Press <strong>Save event</strong>. The event appears immediately in the Upcoming schedule and the monthly snapshot with appropriate badges.
+  </Step>
+</Steps>
+
+## Interpreting the timeline
+
+- Date chips show the month abbreviation and day number.
+- Time labels adjust based on whether the event spans a single day or multiple days.
+- Visibility badges reveal if the event is church-wide, staff-only, or personal.
+- Descriptions and locations help volunteers know where to report.
+
+## Monthly snapshot cues
+
+- Church events display as solid badges using the primary color.
+- Personal follow-ups render as dashed-outline badges.
+- Overflow counts (`+3 more`) appear when more than three items occupy the same day.
+
+<Warning>
+If the snapshot grid appears empty, confirm your Convex deployment is returning events within the current month.
+</Warning>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Event saved without time" icon="clock">
+    Double-check your browser locale supports the <code>datetime-local</code> input. Re-enter the time or adjust the value manually.
+  </Accordion>
+  <Accordion title="Personal events visible to others" icon="eye">
+    Personal visibility keeps the event out of church and staff tabs, but leaders with higher roles can still audit for scheduling conflicts.
+  </Accordion>
+  <Accordion title="Timeline order looks wrong" icon="list">
+    The list sorts by start timestamp. Ensure every event has a start date and time before saving.
+  </Accordion>
+</AccordionGroup>

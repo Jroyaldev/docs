@@ -1,80 +1,84 @@
----
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Launch your church on ChurchDesk, invite your team, and run your first pastoral review in under 30 minutes."
 ---
 
-## Get started in three steps
+## Before you begin
 
-Get your documentation site running locally and make your first customization.
+Make sure you have:
 
-### Step 1: Set up your local environment
+- A WorkOS AuthKit organization with ChurchDesk added as an application.
+- Convex deployment credentials (`CONVEX_DEPLOYMENT` and `NEXT_PUBLIC_CONVEX_URL`).
+- At least one pastoral leader ready to accept the initial invite.
+
+<Warning>
+Never share Convex tokens or WorkOS API keys in chat or email. Add them only to your secure `.env.local` file.
+</Warning>
+
+## Launch checklist
+
+<Steps>
+  <Step title="Accept your ChurchDesk invite">
+    Open the welcome email titled "Activate your ChurchDesk workspace" and follow the link.
+
+    1. Sign in with WorkOS AuthKit using your church email address.
+    2. Approve the requested scopes so ChurchDesk can validate JWT claims against Convex.
+
+    <Check>
+    You should land on the dashboard and see your name in the global header.
+    </Check>
+  </Step>
+
+  <Step title="Confirm your profile and role">
+    Navigate to the <a href="/workspaces/team">Team workspace</a> and verify your title, email, and role.
+
+    - Update placeholder names or `@unknown` emails so mentions work across chat and tasks.
+    - Promote a second leader to `Pastor` so there is always more than one admin.
+
+    <Tip>
+    Use the "Backfill roster titles" action to sync default titles for every role.
+    </Tip>
+  </Step>
+
+  <Step title="Run your first pastoral review">
+    Keep the <a href="/workspaces/dashboard">Dashboard workspace</a> open while you:
+
+    - Add an upcoming event from the <a href="/workspaces/calendar">Calendar</a> workspace.
+    - Post a prayer request to the <a href="/workspaces/prayer">Prayer wall</a>.
+    - Create a follow-up task for yourself in the <a href="/workspaces/tasks">Tasks board</a>.
+
+    <Check>
+    You should see the dashboard widgets refresh without a page reload.
+    </Check>
+  </Step>
+</Steps>
+
+## Optional setup
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
+  <Accordion title="Invite the rest of your team" icon="user-plus">
+    Generate invite links from the <a href="/workspaces/people">People directory</a>. Choose the default role that matches their responsibilities and share the short-lived link securely.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+  <Accordion title="Import households" icon="home">
+    Use the "Create household" flow to capture family details, then attach existing members or add new ones. Each household automatically receives a dedicated chat channel for pastoral collaboration.
+  </Accordion>
+  <Accordion title="Configure ministry tags" icon="tag">
+    Update the tag list in the People workspace to reflect volunteer teams, youth segments, or campuses. These tags power quick filters and follow-up automations.
   </Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
-
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
-
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
-
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
-
-### Step 3: Go live
-
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
-
-## Next steps
-
-Now that you have your docs running, explore these key features:
+## Keep momentum
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card title="Understand the dashboard" icon="gauge" href="/workspaces/dashboard">
+    Learn how insights, alerts, and widgets summarize your week at a glance.
+  </Card>
+  <Card title="Equip your care team" icon="users" href="/workspaces/people">
+    Train leaders to record notes, manage follow-ups, and steward households well.
+  </Card>
+  <Card title="Align your teaching calendar" icon="book-open" href="/workspaces/sermons">
+    Move sermons from idea to delivery with shared outlines and resource attachments.
+  </Card>
+  <Card title="Center communication" icon="message-circle" href="/workspaces/chat">
+    Keep ministry conversations anchored to their channels and member context.
+  </Card>
 </CardGroup>
-
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
