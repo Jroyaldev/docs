@@ -1,102 +1,75 @@
 ---
-title: "People workspace"
-description: "Steward households, member profiles, and staff invites with the context your care team needs."
+title: "People"
+description: "Manage your congregation with households, groups, and pastoral notes."
 ---
 
-## Access requirements
+## Overview
 
-Only Lead Pastors, Pastors, and Staff can open the People workspace. Everyone else sees a restricted notice to keep pastoral care records private.
-
-<Warning>
-Invite new leaders with the correct role before sharing household data. Promotions propagate instantly across all workspaces.
-</Warning>
-
-## Directory view
-
-The Directory tab lists every member with filters that focus the right group quickly.
-
-<Columns cols={2}>
-  <div>
-    <h3>Filters</h3>
-    <p>Choose from presets like <strong>Needs follow-up</strong>, <strong>New this month</strong>, <strong>Volunteers</strong>, <strong>Youth</strong>, and <strong>Staff</strong>. Filters combine status, tags, and creation dates.</p>
-  </div>
-  <div>
-    <h3>Search</h3>
-    <p>A case-insensitive search scans names, emails, and tags. As you type, ChurchDesk debounces the query to keep performance high.</p>
-  </div>
-</Columns>
-
-Each member drawer reveals:
-
-- Profile data, contact info, and tags.
-- Household relationships with quick links to open the household record.
-- Follow-up tasks tied to the person.
-- Notes, attendance history, and timeline events to remember past touchpoints.
-- A personal chat channel for staff collaboration.
-
-<Tip>
-Click "Open care channel" on a member or household to jump straight to their dedicated chat thread in the Chat workspace.
-</Tip>
-
-## Households view
-
-Use the Households tab to organize families and shared addresses. The list supports filters for <strong>All households</strong>, <strong>New this month</strong>, and <strong>Needs follow-up</strong>.
-
-Household details include:
-
-- Member roster with roles (head, spouse, child, etc.) and segment flags for youth or caregivers.
-- Communication preferences (email, SMS, mail) so you contact families the way they prefer.
-- Shared notes, care history, and linked tasks from Convex.
-- Quick actions to promote a primary contact or update the address.
-
-## Create or update records
-
-<Steps>
-  <Step title="Add a new member">
-    1. From Directory, click <strong>New member</strong>.
-    2. Enter name, email, phone, and select an optional existing household.
-    3. Assign tags or mark the person for follow-up so they appear in filters immediately.
-  </Step>
-  <Step title="Start a household">
-    1. Switch to Households and choose <strong>Create household</strong>.
-    2. Define the household name, address, and tag(s).
-    3. Attach existing members or add new ones, indicating role and messaging preferences.
-  </Step>
-  <Step title="Document pastoral care">
-    1. Open a member or household drawer.
-    2. Add a note, schedule a follow-up task, or mark communication outcomes.
-    3. Confirm the timeline updates with timestamps for future reference.
-  </Step>
-</Steps>
-
-## Manage staff invites
-
-Lead Pastors and Pastors see the Invite Manager below the workspace:
-
-- Generate single-use join links tied to specific roles.
-- Download a QR code for in-person onboarding.
-- Revoke or expire links instantly if one is shared accidentally.
+The People workspace helps you care for your congregation by tracking members, organizing households, and recording pastoral interactions.
 
 <Note>
-Invites inherit role titles from the Team workspace presets. Update those first so new leaders land with the right language.
+This workspace is restricted to leadership roles (Lead Pastor, Pastor, Staff) to protect sensitive pastoral information.
 </Note>
 
-## Integrations across ChurchDesk
+## Directory
 
-- Creating a follow-up task automatically surfaces on the Dashboard and Tasks board.
-- Marking a prayer request for a household makes it appear in the Prayer workspace with the correct privacy channel.
-- Chat channels created from the People workspace show up in the Chat workspace with member context applied.
+The main directory lists all members in your church. You can:
 
-## Troubleshooting
+- **Search** by name
+- **Sort** by recent activity, alphabetical, or last engaged
+- **Filter** by follow-up status
 
-<AccordionGroup>
-  <Accordion title="Filters return no results" icon="filter">
-    Ensure the tags or statuses exist on your member records. Add an inclusive filter like <strong>Everyone</strong> to confirm the list is populated.
-  </Accordion>
-  <Accordion title="Household drawer will not open" icon="folder-open">
-    Check your URL parameters. Remove `householdId` from the address bar to reset the state and reload the list.
-  </Accordion>
-  <Accordion title="Invite link fails after sending" icon="link">
-    Links expire after first use or when the expiration timestamp lapses. Generate a fresh link from the Invite Manager and share securely.
-  </Accordion>
-</AccordionGroup>
+Click any person to view their full profile with contact info, notes, and engagement history.
+
+## Adding people
+
+1. Click **Add person**
+2. Enter their name and contact information
+3. Add any initial notes
+4. Optionally assign them to a household
+
+## Households
+
+Group family members together in households. This helps you:
+
+- Track family units as a whole
+- Share contact information
+- Record household-level notes
+
+Go to **People > Households** to manage household records. Each household can have multiple members with roles like "Head of household", "Spouse", or "Child".
+
+## Groups
+
+Organize people into ministry groups like:
+
+- Small groups
+- Volunteer teams
+- Ministry departments
+
+Groups have leaders and members. Use them to coordinate ministry activities and communication.
+
+Go to **People > Groups** to create and manage groups.
+
+## Classes
+
+Track educational programs and their participants:
+
+- New member classes
+- Bible studies
+- Training programs
+
+Go to **People > Classes** to manage class enrollment.
+
+## Pastoral care
+
+For each person, you can:
+
+- Add **notes** from conversations and visits
+- Track **follow-ups** that need attention
+- View their **engagement history**
+
+These records help your pastoral team provide consistent, informed care.
+
+<Tip>
+Use the care queue on your Dashboard to see which members need follow-up attention this week.
+</Tip>

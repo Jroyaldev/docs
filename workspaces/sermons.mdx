@@ -1,62 +1,61 @@
 ---
-title: "Sermons workspace"
-description: "Move sermons from idea to delivery with shared outlines, statuses, and resources."
+title: "Sermons"
+description: "Manage your preaching pipeline from idea to delivery."
 ---
 
-## Sermon queue overview
+## Overview
 
-The left column lists up to forty sermons filtered by status. Tabs at the top focus on <strong>All</strong>, <strong>In review</strong>, or <strong>Scheduled</strong> sermons. Selecting a sermon opens its outline, resources, and metadata on the right.
+The Sermons workspace is where you track all your sermons as they move through preparation. The list shows sermons filtered by status with search and pagination for larger libraries.
 
-<Info>
-Statuses include `draft`, `in_review`, `scheduled`, `delivered`, and `archived`. The Dashboard shows progress for every sermon that is not delivered.
-</Info>
+## Sermon statuses
 
-## Create a sermon
+Every sermon moves through a clear workflow:
 
-<Steps>
-  <Step title="Launch the dialog">
-    Click <strong>New sermon</strong>. Only the title is required, but adding scripture and opening thoughts helps your team get traction quickly.
-  </Step>
-  <Step title="Draft collaboratively">
-    The sermon immediately appears at the top of the queue. Select it to open the outline container, then begin writing or paste AI-generated content.
-  </Step>
-  <Step title="Attach supporting material">
-    Use <strong>Attach reference</strong> to upload commentary notes, testimonies, or liturgy elements. Resources stay tethered to the sermon for later review.
-  </Step>
-</Steps>
+| Status | Description |
+|--------|-------------|
+| **Idea** | Initial concept, not yet started |
+| **Outlining** | Building the structure |
+| **Writing** | Developing the content |
+| **Polishing** | Refining and finalizing |
+| **Ready** | Complete and waiting for delivery |
+| **Delivered** | Preached to your congregation |
+| **Archived** | Stored for future reference |
+
+The status shows as a progress bar so you can see at a glance how close each sermon is to completion.
+
+## Creating a sermon
+
+1. Click **New sermon**
+2. Enter a title (required)
+3. Optionally add:
+   - Scripture references
+   - Series name
+   - Scheduled delivery date
+4. Click **Create**
+
+Your sermon starts in "Idea" status and appears at the top of the list.
+
+## Filtering and search
+
+- Use the **status tabs** to filter by stage (All, In Progress, Ready, Delivered)
+- **Search** finds sermons by title
+- Results are paginated — use navigation to browse older sermons
+
+## Opening the Studio
+
+Click any sermon to open it in the **Studio editor**. This is where you write the actual content with structured blocks for main points, scripture, illustrations, and more.
+
+See the [Studio documentation](/workspaces/studio) for details on the editor.
+
+## Sermon details
+
+Each sermon tracks:
+- **Title** and **scripture** references
+- **Series** for grouping related messages
+- **Scheduled date** when you'll deliver it
+- **Status** showing preparation progress
+- **Created/Updated** timestamps
 
 <Tip>
-Need to align your preaching calendar? Use the <strong>Sync with calendar</strong> button to open the Calendar workspace in a new tab.
+Schedule your sermon's delivery date when you create it. The Dashboard will remind you as the date approaches.
 </Tip>
-
-## Manage sermon status
-
-- Update the status from the list item dropdown once peer review begins or when the outline is scheduled.
-- Progress bars represent the underlying status: drafts show 20%, reviews 55%, scheduled sermons 75%, and delivered sermons 100%.
-- The "Delivering in" label keeps you aware of upcoming preaching dates.
-
-<Warning>
-Delivered sermons still appear until archived. Archive them after uploading final recordings to keep the queue focused on active work.
-</Warning>
-
-## Resource section
-
-Each sermon detail view contains a Resources panel:
-
-- Upload text-based references (illustrations, testimonies, research) for the teaching team.
-- See resource type, labels, and content inline without leaving ChurchDesk.
-- Empty states remind you to capture supporting material before the sermon is finalized.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title="Sermon not appearing in queue" icon="list">
-    Verify you saved the creation dialog. The queue shows the 40 most recent entries—older sermons may be archived automatically by Convex jobs.
-  </Accordion>
-  <Accordion title="Outline missing after refresh" icon="file-text">
-    Ensure the content field was saved before navigating away. Keeping the sermon card open while edits sync prevents overwriting with stale data.
-  </Accordion>
-  <Accordion title="Need to change scheduled date" icon="calendar">
-    Edit the sermon record in Convex or adjust the associated calendar event, then refresh the Sermons workspace to update the label.
-  </Accordion>
-</AccordionGroup>

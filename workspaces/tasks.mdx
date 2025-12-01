@@ -1,68 +1,65 @@
 ---
-title: "Tasks workspace"
-description: "Coordinate ministry work on a kanban board with filters, mentions, and comment threads."
+title: "Tasks"
+description: "Track ministry projects with priorities, due dates, and delegation."
 ---
 
-## Board layout
+## Overview
 
-The Tasks workspace visualizes ministry work across five status columns: <strong>Backlog</strong>, <strong>Next up</strong>, <strong>In progress</strong>, <strong>Blocked</strong>, and <strong>Completed</strong>. Every card shows priority, due dates, tags, and followers at a glance.
+The Tasks workspace helps you manage ministry work with clear priorities and deadlines. Tasks can be assigned, delegated, and tracked through completion.
 
-<Info>
-Card colors reflect status and priority so you can scan for urgent, blocked, or overdue items instantly.
-</Info>
+## Views
 
-## Filter the board
+Switch between different views to focus on what matters:
 
-Use the filter panel above the board to focus on the work that matters right now.
+- **Overview** — All active tasks ranked by priority
+- **Today** — Tasks due today
+- **Upcoming** — Tasks with future due dates
+- **Someday** — Tasks without a due date
+- **Recurring** — Repeating tasks (coming soon)
 
-- **Search** filters tasks by title or description.
-- **Owner** shows tasks assigned to a specific teammate or those still unassigned.
-- **Priority** limits to low, medium, high, or urgent work.
-- **Tag** filters by ministry area such as "worship" or "facilities".
+## Creating tasks
+
+1. Click the **+** button or use the quick add
+2. Enter a task title
+3. Set priority: Urgent, High, Medium, or Low
+4. Add a due date (optional)
+5. Assign to yourself or a team member
+
+Tasks appear immediately in the appropriate view.
+
+## Priority levels
+
+Tasks are color-coded by priority:
+
+| Priority | When to use |
+|----------|-------------|
+| **Urgent** | Needs immediate attention |
+| **High** | Important, complete soon |
+| **Medium** | Standard priority |
+| **Low** | Nice to have, no rush |
+
+The Overview sorts tasks by priority first, then by due date.
+
+## Delegation
+
+Assign tasks to team members to delegate work. The assignee sees the task in their view, and you can track progress.
+
+Your Dashboard shows a badge when you have delegated tasks — reminding you to follow up on work you've assigned to others.
+
+## Completing tasks
+
+Click the checkbox to mark a task complete. Completed tasks move out of active views but remain in your history.
 
 <Tip>
-Filters sync with URL parameters. Share filtered board links in chat so teammates view the exact same slice.
+Review your Today view first thing each morning to know exactly what needs to happen.
 </Tip>
 
-## Create a task
+## Due dates
 
-<Steps>
-  <Step title="Open the dialog">
-    Click <strong>New task</strong> and provide a descriptive title.
-  </Step>
-  <Step title="Add details">
-    Set an optional description, priority, and due date. ChurchDesk accepts future dates only.
-  </Step>
-  <Step title="Assign later">
-    Tasks can be created unassigned. Use the card controls to set an owner as soon as you know who is responsible.
-  </Step>
-</Steps>
+Tasks with due dates show:
 
-## Work within a card
+- **Today** — Due today (highlighted)
+- **Overdue** — Past due date (red warning)
+- **Upcoming** — Future due date with date shown
 
-- Change assignee, status, and due date inline without closing the card.
-- View or clear due dates using the calendar input and reset button.
-- Toggle the comment feed to exchange updates or tag teammates (ChurchDesk supports mentions via the Team workspace handles).
-- Followers count shows who is subscribed to updates.
-
-<Warning>
-Closing a card while a mutation is still pending can lead to temporary UI drift. Wait for the spinner to disappear before navigating away.
-</Warning>
-
-## Empty states and guidance
-
-Each column displays contextual prompts when empty (e.g., "Capture future ministry ideas here" for the backlog). Use them to align your team on how to categorize work.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title="Filters won't reset" icon="refresh-ccw">
-    Use the <strong>Reset</strong> button in the filter panel. It clears search terms, owner, priority, and tag selections in one click.
-  </Accordion>
-  <Accordion title="Comments fail to send" icon="message-circle">
-    Confirm you still have access to the task board and that your Convex deployment is running. Refresh the page after reconnecting.
-  </Accordion>
-  <Accordion title="Due date shows the wrong day" icon="calendar">
-    ChurchDesk stores dates in UTC at midnight. Time zone conversion happens in the browser, so check your device clock settings.
-  </Accordion>
-</AccordionGroup>
+Overdue tasks surface prominently on your Dashboard.

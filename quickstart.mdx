@@ -1,84 +1,92 @@
+---
 title: "Quickstart"
-description: "Launch your church on ChurchDesk, invite your team, and run your first pastoral review in under 30 minutes."
+description: "Set up your church workspace in under 5 minutes."
 ---
 
-## Before you begin
+## Create your workspace
 
-Make sure you have:
-
-- A WorkOS AuthKit organization with ChurchDesk added as an application.
-- Convex deployment credentials (`CONVEX_DEPLOYMENT` and `NEXT_PUBLIC_CONVEX_URL`).
-- At least one pastoral leader ready to accept the initial invite.
-
-<Warning>
-Never share Convex tokens or WorkOS API keys in chat or email. Add them only to your secure `.env.local` file.
-</Warning>
-
-## Launch checklist
+When you first sign in to Shepherdly, you'll go through a quick setup process.
 
 <Steps>
-  <Step title="Accept your ChurchDesk invite">
-    Open the welcome email titled "Activate your ChurchDesk workspace" and follow the link.
-
-    1. Sign in with WorkOS AuthKit using your church email address.
-    2. Approve the requested scopes so ChurchDesk can validate JWT claims against Convex.
-
-    <Check>
-    You should land on the dashboard and see your name in the global header.
-    </Check>
+  <Step title="Enter your church name">
+    This appears throughout the app and in team invitations.
   </Step>
-
-  <Step title="Confirm your profile and role">
-    Navigate to the <a href="/workspaces/team">Team workspace</a> and verify your title, email, and role.
-
-    - Update placeholder names or `@unknown` emails so mentions work across chat and tasks.
-    - Promote a second leader to `Pastor` so there is always more than one admin.
-
-    <Tip>
-    Use the "Backfill roster titles" action to sync default titles for every role.
-    </Tip>
+  <Step title="Select your timezone">
+    Important for event scheduling and sermon delivery dates.
   </Step>
-
-  <Step title="Run your first pastoral review">
-    Keep the <a href="/workspaces/dashboard">Dashboard workspace</a> open while you:
-
-    - Add an upcoming event from the <a href="/workspaces/calendar">Calendar</a> workspace.
-    - Post a prayer request to the <a href="/workspaces/prayer">Prayer wall</a>.
-    - Create a follow-up task for yourself in the <a href="/workspaces/tasks">Tasks board</a>.
-
-    <Check>
-    You should see the dashboard widgets refresh without a page reload.
-    </Check>
+  <Step title="Choose your accent color">
+    Pick a color that matches your church brand. You can change this later in settings.
   </Step>
 </Steps>
 
-## Optional setup
+After setup, you'll land on your Dashboard with a welcome banner showing quick actions to get started.
 
-<AccordionGroup>
-  <Accordion title="Invite the rest of your team" icon="user-plus">
-    Generate invite links from the <a href="/workspaces/people">People directory</a>. Choose the default role that matches their responsibilities and share the short-lived link securely.
-  </Accordion>
-  <Accordion title="Import households" icon="home">
-    Use the "Create household" flow to capture family details, then attach existing members or add new ones. Each household automatically receives a dedicated chat channel for pastoral collaboration.
-  </Accordion>
-  <Accordion title="Configure ministry tags" icon="tag">
-    Update the tag list in the People workspace to reflect volunteer teams, youth segments, or campuses. These tags power quick filters and follow-up automations.
-  </Accordion>
-</AccordionGroup>
+## Invite your team
 
-## Keep momentum
+Go to **Team** in the sidebar to invite members.
+
+1. Click **Invite member**
+2. Choose their role:
+   - **Pastor** — Full access to all workspaces
+   - **Staff** — Access to operations and people workspaces
+   - **Volunteer** — Limited access, can create tasks and prayers
+3. Copy the invite link or send via email
+
+Team members use the link to join your workspace. Their role determines what they can access.
+
+## Create your first sermon
+
+Head to **Sermons** and click **New sermon**.
+
+1. Enter a title
+2. Optionally add scripture references and a scheduled delivery date
+3. Click **Create**
+
+Your sermon starts in the "Idea" status. Open it in the Studio editor to start writing.
+
+<Tip>
+The sermon workflow moves through: Idea → Outlining → Writing → Polishing → Ready → Delivered
+</Tip>
+
+## Add upcoming events
+
+Go to **Calendar** and click on a date or use **New event**.
+
+- Set the title, date, and time
+- Choose visibility: church-wide, team-only, or personal
+- Add a location if applicable
+- Toggle "All-day" for events without specific times
+
+Events appear on your Dashboard and in the calendar view.
+
+## Set up your people directory
+
+The **People** workspace is where you track your congregation.
+
+1. Go to **People > Directory**
+2. Click **Add person**
+3. Enter their name, contact info, and any relevant notes
+4. Assign them to a household if applicable
+
+You can also organize people into **Groups** (small groups, ministries) and **Classes** (educational programs).
+
+<Note>
+The People workspace is restricted to leadership roles (lead pastor, pastor, staff) to protect sensitive pastoral information.
+</Note>
+
+## What's next?
 
 <CardGroup cols={2}>
-  <Card title="Understand the dashboard" icon="gauge" href="/workspaces/dashboard">
-    Learn how insights, alerts, and widgets summarize your week at a glance.
+  <Card title="Dashboard" icon="gauge" href="/workspaces/dashboard">
+    See your daily overview and what needs attention.
   </Card>
-  <Card title="Equip your care team" icon="users" href="/workspaces/people">
-    Train leaders to record notes, manage follow-ups, and steward households well.
+  <Card title="Sermon Studio" icon="pen-nib" href="/workspaces/studio">
+    Learn the sermon editor with custom blocks and export options.
   </Card>
-  <Card title="Align your teaching calendar" icon="book-open" href="/workspaces/sermons">
-    Move sermons from idea to delivery with shared outlines and resource attachments.
+  <Card title="Prayer Wall" icon="hands-praying" href="/workspaces/prayer">
+    Set up collaborative prayer tracking for your team.
   </Card>
-  <Card title="Center communication" icon="message-circle" href="/workspaces/chat">
-    Keep ministry conversations anchored to their channels and member context.
+  <Card title="Tasks" icon="check-circle" href="/workspaces/tasks">
+    Organize ministry projects with priorities and due dates.
   </Card>
 </CardGroup>

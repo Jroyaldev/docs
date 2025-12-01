@@ -1,71 +1,71 @@
 ---
-title: "Team workspace"
-description: "Shape your ministry roster, manage permissions, and equip leaders with the right titles."
+title: "Team"
+description: "Manage your ministry team members and roles."
 ---
 
-## Leadership gate
+## Overview
 
-The Team workspace is restricted to leadership roles. Non-leadership users encounter a notice explaining how to request access or promote themselves if no lead pastor exists yet.
-
-<Warning>
-Promoting yourself to Lead Pastor is only available when no other leader exists. Use this option responsibly to keep governance healthy.
-</Warning>
-
-## Profile completion card
-
-Newly provisioned users may see a prompt to confirm name, email, and title. ChurchDesk syncs data from WorkOS, but you should:
-
-- Replace placeholder names (`Pastor` or email handles) with full names.
-- Update emails ending in `@unknown` with real addresses.
-- Adjust the displayed ministry title to match your church context.
-
-<Check>
-Saving the profile immediately updates mentions, chat labels, and dashboard greetings.
-</Check>
-
-## Manage the roster
-
-Cards summarize each teammate with:
-
-- Avatar, name, primary title, and email.
-- Activity metrics (tasks, follow-ups, mentions).
-- Role selector and editable displayed title.
-- Shortcuts to view tasks filtered by owner or open follow-up lists.
-
-<Tip>
-Role dropdowns disable on your own card. Ask another leader to adjust your permissions if needed.
-</Tip>
-
-## Role title presets
-
-The "Set preferred ministry titles" card lets leadership:
-
-- Define the primary title for each canonical role (Lead Pastor, Pastor, Staff, Volunteer, Member).
-- Provide alternate titles (e.g., Student Pastor, Worship Director) for quick selection.
-- Backfill existing teammates so their cards update automatically.
-
-## Mentions directory
-
-The mention directory provides a searchable list of handles and email addresses. Copy a handle to the clipboard to use in chat, tasks, or notes.
+The Team workspace is where you manage who has access to your Shepherdly workspace and what they can do.
 
 <Note>
-Handles use the format generated from the teammate's name or email. Keep names accurate to maintain readable mentions.
+Only leadership roles (Lead Pastor, Pastor, Staff) can access the Team workspace.
 </Note>
 
-## Leadership activity
+## Roles
 
-The workspace surfaces leadership state information from Convex. If new leadership slots are available, a banner invites eligible users to promote themselves to keep governance intact.
+Every team member has a role that determines their permissions:
 
-## Troubleshooting
+| Role | Access |
+|------|--------|
+| **Lead Pastor** | Full access to everything, can manage team |
+| **Pastor** | Full access to most features |
+| **Staff** | Access to operations and people workspaces |
+| **Volunteer** | Limited access, can create tasks and prayers |
+| **Member** | Basic access to public content |
 
-<AccordionGroup>
-  <Accordion title="Role changes not sticking" icon="rotate-ccw">
-    Wait for the update spinner to finish before navigating away. If the role reverts, refresh the page and retry.
-  </Accordion>
-  <Accordion title="Cannot edit titles" icon="lock">
-    Only Lead Pastors and Pastors can update role titles. Confirm your role in the roster grid.
-  </Accordion>
-  <Accordion title="Backfill button fails" icon="alert-triangle">
-    Ensure Convex is running. Check console logs for errors and try again after the deployment reconnects.
-  </Accordion>
-</AccordionGroup>
+## Viewing your team
+
+The Team page shows all members with:
+
+- Name and profile photo
+- Role and custom title
+- Email address
+- Activity summary
+
+## Inviting members
+
+1. Click **Invite member**
+2. Choose the role for the new member
+3. Copy the invite link
+
+Share the link with your new team member. When they click it, they'll be able to join your workspace with the assigned role.
+
+Invite links expire after use for security.
+
+## Changing roles
+
+Lead Pastors and Pastors can change team member roles:
+
+1. Find the team member
+2. Click their role
+3. Select a new role from the dropdown
+
+Role changes take effect immediately.
+
+<Warning>
+Be careful when assigning leadership roles. They have access to sensitive pastoral information in the People workspace.
+</Warning>
+
+## Custom titles
+
+Beyond the standard roles, you can set custom titles that display throughout the app:
+
+- "Youth Pastor" instead of just "Pastor"
+- "Worship Director" instead of just "Staff"
+- "Small Group Leader" instead of just "Volunteer"
+
+This helps your team identify each other by their actual ministry role.
+
+<Tip>
+Set custom titles that match how your church actually refers to each position.
+</Tip>

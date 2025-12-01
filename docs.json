@@ -1,10 +1,10 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "ChurchDesk Docs",
+  "name": "Shepherdly",
   "colors": {
     "primary": "#16A34A",
-    "light": "#07C983",
+    "light": "#22C55E",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
@@ -14,32 +14,37 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Welcome",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Ministry overview",
+            "group": "Your Dashboard",
             "pages": [
               "workspaces/dashboard"
             ]
           },
           {
-            "group": "Care and discipleship",
+            "group": "Sermon Preparation",
             "pages": [
-              "workspaces/people",
-              "workspaces/prayer",
-              "workspaces/sermons"
+              "workspaces/sermons",
+              "workspaces/studio"
             ]
           },
           {
-            "group": "Operations and communication",
+            "group": "People & Care",
             "pages": [
-              "workspaces/calendar",
+              "workspaces/people",
+              "workspaces/prayer"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
               "workspaces/tasks",
+              "workspaces/calendar",
               "workspaces/chat",
               "workspaces/team"
             ]
@@ -50,8 +55,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "App login",
-          "href": "https://churchdesk.app",
+          "anchor": "Open Shepherdly",
+          "href": "https://shepherdly.ai",
           "icon": "arrow-up-right"
         }
       ]
@@ -65,26 +70,19 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@churchdesk.app"
+        "href": "mailto:support@shepherdly.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Launch ChurchDesk",
-      "href": "https://churchdesk.app"
+      "label": "Open Shepherdly",
+      "href": "https://shepherdly.ai"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view"
-    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/churchdesk",
-      "github": "https://github.com/shepherd-suite",
-      "linkedin": "https://www.linkedin.com/company/shepherd-suite"
+      "x": "https://x.com/shepherdlyai",
+      "github": "https://github.com/shepherd-suite"
     }
   }
 }
